@@ -1,3 +1,4 @@
+// Typed.js for hero section
 var typed = new Typed("#desc", {
   strings: ["Front-End Developer"],
   typeSpeed: 50,
@@ -7,19 +8,12 @@ var typed = new Typed("#desc", {
   backDelay: 1000,
 });
 
-// Hamburger Menu
+// Hamburger Menu Toggle
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
-const icon = hamburger.querySelector("i");
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
-
-  if (navMenu.classList.contains("active")) {
-    icon.className = "bx bx-x";
-  } else {
-    icon.className = "bx bx-menu";
-  }
 });
 
 // Close menu when clicking on a link
@@ -27,6 +21,12 @@ const navLinks = document.querySelectorAll(".nav-menu a");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
-    icon.className = "bx bx-menu";
   });
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+  if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+    navMenu.classList.remove("active");
+  }
 });
