@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+          
+  
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <!-------------------------------------------------navbar--------------------------------------------------------->
+      <nav class="navbar">
+      <div class="nav-container">
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portofolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+   <!-------------------------------------------------Hero--------------------------------------------------------->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h3 class="greeting">Hello, I'm</h3>
+                    <h1 class="name">Fitriyana</h1>
+                    <div>
+                        <span id="desc" class="desc-output"></span>
+                    </div>
+                    <p class="bio">Passionate web developer creating beautiful and functional 
+                        websites. I turn ideas into digital reality.</p>
+                    <!--CTA-->
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">Showcase</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+
+                    <!--Links-->
+                    <div class="social-media">
+                        <a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+                    </div>
+                </div>
+
+                <!--Foto profile-->
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="asset/pics.png" alt="Fitriyana">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------------------------------------------------About--------------------------------------------------------->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="asset/me.png" alt="about me">
+          </div>
+          <div class="about-text">
+            <p>Hello! I’m a front-end developer with a passion for crafting user-friendly interfaces and clean layouts.
+              I love the process of transforming static designs into interactive, responsive websites that look good on 
+              any device.
+            </p>
+            <p>Right now, I’m focused on sharpening my JavaScript fundamentals, exploring CSS animations, and building
+               projects that help me express both my creativity and logic. I enjoy working in environments where ideas flow freely and learning never stops.
+            </p>
+          </div>
+        </div> 
+    </section>
+  
+    <!-------------------------------------------------Skill--------------------------------------------------------->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="title">My Skills</h2>
+        <div class="skill-col">
+          <div class="skill-category">
+            <div class="experties">
+              <h3><ion-icon name="code-slash-outline"></ion-icon>Front-End</h3>
+              <div class="skill-item"><ion-icon name="logo-html5"></ion-icon>HTML</div>
+              <div class="skill-item"><ion-icon name="logo-css3"></ion-icon>CSS</div>
+              <div class="skill-item"><ion-icon name="logo-javascript"></ion-icon>Java Script</div>
+              <div class="skill-item"><ion-icon name="logo-react"></ion-icon>React</div>
+            </div>
+            <div class="tools">
+              <h3><ion-icon name="cog-outline"></ion-icon>Tools</h3>
+              <div class="skill-item"><i class="devicon-vscode-plain"></i>Visual Studio Code</div>
+              <div class="skill-item"><i class="devicon-github-original"></i>GitHub</div>
+              <div class="skill-item"><i class="devicon-figma-plain"></i>Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-------------------------------------------------Portofolio--------------------------------------------------------->
+    <section id="portofolio" class="portofolio">
+      <div class="container">
+        <h2 class="title">My Portfolio</h2>
+        <div class="portfolio-grid">
+          <!------------project 1-------------->
+            <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="asset/project-1.jpeg" alt="E-commerce Website" />
+              <div class="portfolio-overlay">
+                <h3>Website Cafe</h3>
+                <p>
+                  A clean and modern website for a smoothie café, showcasing fresh and healthy smoothies.
+                </p>
+                <div class="portfolio-links">
+                  <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Website Cafe</h3>
+              <span>HTML, CSS : Tailwind</span>
+            </div>
+          </div>
+
+           <!-- Project 2 -->
+          <div class="portfolio-item" data-category="app">
+            <div class="portfolio-image">
+              <img src="asset/project-2.jpeg" alt="Task Management App" />
+              <div class="portfolio-overlay">
+                <h3>Task Management App</h3>
+                <p>
+                  A simple web-based To-Do List app built with HTML, CSS, and JavaScript that allows users to add and delete tasks.
+                </p>
+                <div class="portfolio-links">
+                  <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Task Management App</h3>
+              <span>HTML CSS JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-image">
+              <img src="asset/project-3.jpeg" alt="Fitness Tracker App" />
+              <div class="portfolio-overlay">
+                <h3>Learning Dashboard</h3>
+                <p>A visually organized Learning Dashboard built with HTML and CSS that displays courses,</p>
+                <div class="portfolio-links">
+                  <a href="#"><ion-icon name="link-outline"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Learning Dashboard</h3>
+              <span>HTML CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-------------------------------------------------Let's Connect--------------------------------------------------------->
+    <section class="contact" class="contact">
+      <div class="container">
+        <h2 class="title">Let’s Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-card">
+              <a href="mailto:fitriyade997@gmail.com?subject=Hello&body=Halo%20Fitriyana" target="_blank">
+                <ion-icon name="mail-outline"></ion-icon>
+                <h3>Email</h3>
+                <p>fitriyade997@gmail.com</p>
+              </a>
+            </div>
+
+            <div class="info-card">
+              <a href="https://wa.me/628988962829" target="_blank">
+                <ion-icon name="call-outline"></ion-icon>
+                <h3>Mobile Phone</h3>
+                <p>+62 898 896 2829</p>
+              </a>
+            </div>
+
+            <div class="info-card">
+              <a href="https://www.linkedin.com/in/nur-fitriyana-dewi-/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <h3>LinkedIn</h3>
+                <p>/in/nur-fitriyana-dewi-/</p>
+              </a>
+            </div>
+
+            <div class="info-card">
+              <a href="https://wa.me/628988962829" target="_blank">
+                <ion-icon name="location-outline"></ion-icon>
+                <h3>My Location</h3>
+                <p>Jawa Tengah, Indonesia</p>
+              </a>
+            </div>
+          </div>
+          <!--Form-->
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------------FOOTER------------------------------------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Fitriyana</div>
+          <p class="footer-text">Front-End Developer</p>
+          <div class="footer-social">
+            <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></i></a>
+          </div>
+          <p class="copyright">© 2024 Fitriyana. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!------jAVAsCRIPT-->
+ <script src="script.js"></script>
+  </body>
+</html>
